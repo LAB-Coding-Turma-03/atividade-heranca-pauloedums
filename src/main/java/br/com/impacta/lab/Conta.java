@@ -7,10 +7,9 @@ public class Conta {
 	private String tipo;
 
 	public Conta(int numero, int agencia, String tipo) {
-		super();
-		this.numero = numero;
-		this.agencia = agencia;
-		this.tipo = tipo;
+		this.setNumero(numero);;
+		this.setAgencia(agencia);
+		this.setTipo(tipo);
 	}
 
 	public int getNumero() {
@@ -38,9 +37,7 @@ public class Conta {
 	}
 
 	public String montarResumoDaConta() {
-		return "Numero: " + this.getNumero() + 
-		" - Agencia: " + this.getAgencia() +
-		" - Tipo: " + this.getTipo();
+		return "Numero: " + this.getNumero() + " - Agencia: " + this.getAgencia() + " - Tipo: " + this.getTipo();
 	}
 	
 }

@@ -9,18 +9,18 @@ public class JavaSpringTemplateApplicationTests {
 	@Test
 	public void shouldHaveInstantiateCCWithSucess() {
 		
-		Conta cc = new ContaCorrente(10, 1, "CC");
+		Conta contaCorrente = new ContaCorrente(10, 1, "CC");
 		
-		assertEquals("CC", cc.getTipo());
+		assertEquals("CC", contaCorrente.getTipo());
 		
 	}
 	
 	@Test
 	public void shouldHaveInstantiateCPWithSucess() {
 		
-		Conta cp = new ContaPoupanca(5, 12, "CP");
+		Conta contaPoupanca = new ContaPoupanca(5, 12, "CP");
 		
-		assertEquals("CP", cp.getTipo());
+		assertEquals("CP", contaPoupanca.getTipo());
 		
 	}
 	

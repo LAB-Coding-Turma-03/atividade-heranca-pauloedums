@@ -48,11 +48,14 @@ public class JavaSpringTemplateApplication {
 		 * 
 		 */
 		
-		Conta cc = new ContaCorrente(10, 1, "CC");
-		Conta cp = new ContaPoupanca(5, 12, "CP");
+		Conta contaCorrente = new ContaCorrente(10, 1, "CC");
+		Conta contaPoupanca = new ContaPoupanca(5, 12, "CP");
 		
-		System.out.println(cc.montarResumoDaConta());
-		System.out.println(cp.montarResumoDaConta());
+		Conta contaPoupanca2 = new ContaPoupanca(2, 50, "CP");
+		
+		System.out.println(contaCorrente.montarResumoDaConta());
+		System.out.println(contaPoupanca.montarResumoDaConta());
+		System.out.println(contaPoupanca2.montarResumoDaConta());
 	}
 
 }
